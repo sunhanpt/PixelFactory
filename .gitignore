@@ -1,3 +1,4 @@
 *.log
-\Intermediate\
-\Output\
+/Intermediate/
+/Output/
+/.vs/
