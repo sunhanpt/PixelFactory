@@ -13,10 +13,33 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{8793b701-49f6-4879-91ec-be36a8c9b740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\core\containers">
+      <UniqueIdentifier>{ffdf3f30-139c-43f8-98b5-8afb9a35de32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\core\object">
+      <UniqueIdentifier>{aa31b244-211c-4444-89ea-0d2815003ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\engine">
+      <UniqueIdentifier>{8fc77d92-ea3c-4d9d-bc65-634c5c7b95ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main.cpp">
       <Filter>source</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AVector.h">
+      <Filter>include\core\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UObject.h">
+      <Filter>include\core\object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UWorld.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
