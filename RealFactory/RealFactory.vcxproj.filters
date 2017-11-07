@@ -30,6 +30,9 @@
     <ClCompile Include="source\Main.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="source\UObject.cpp">
+      <Filter>include\core\object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AVector.h">
