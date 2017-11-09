@@ -1,7 +1,7 @@
 #ifndef __U_LEVEL__
 #define __U_LEVEL__
 
-#include "UObject.h"
+#include "Object.h"
 #include <vector>
 
 class AActor;
@@ -9,8 +9,8 @@ class ULevel : public UObject
 {
 public:
 	ULevel() {}
-	virtual ULevel() {}
-property:
+	virtual ~ULevel() {}
+public:
 	std::vector<AActor*> Actors;
 };
 

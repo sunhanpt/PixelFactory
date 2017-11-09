@@ -1,7 +1,7 @@
 #ifndef __ACTOR_COMPONENT__
 #define __ACTOR_COMPONENT__
 
-#include "UObject.h"
+#include "Object.h"
 class UActorComponent : public UObject
 {
 public:

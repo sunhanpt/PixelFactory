@@ -1,7 +1,7 @@
 #ifndef __ACTOR__
 #define __ACTOR__
 
-#include "UObject.h"
+#include "Object.h"
 #include <vector>
 class ULevel;
 class UActorComponent;

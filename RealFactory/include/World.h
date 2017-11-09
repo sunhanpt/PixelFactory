@@ -1,8 +1,10 @@
 #ifndef __U_WORLD__
 #define __U_WORLD__
 
+#include "Object.h"
+
 class FSceneInterface;
-class UWorld
+class UWorld final: public UObject
 {
 public:
 

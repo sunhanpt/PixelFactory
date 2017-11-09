@@ -20,17 +20,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Actor.cpp" />
+    <ClCompile Include="source\GameInstance.cpp" />
     <ClCompile Include="source\Main.cpp" />
-    <ClCompile Include="source\UObject.cpp" />
+    <ClCompile Include="source\Object.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Actor.h" />
     <ClInclude Include="include\ActorComponent.h" />
     <ClInclude Include="include\AVector.h" />
+    <ClInclude Include="include\Engine.h" />
+    <ClInclude Include="include\GameInstance.h" />
     <ClInclude Include="include\SceneComponent.h" />
-    <ClInclude Include="include\ULevel.h" />
-    <ClInclude Include="include\UObject.h" />
-    <ClInclude Include="include\UWorld.h" />
+    <ClInclude Include="include\Level.h" />
+    <ClInclude Include="include\Object.h" />
+    <ClInclude Include="include\World.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

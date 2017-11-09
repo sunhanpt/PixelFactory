@@ -19,9 +19,6 @@
     <Filter Include="include\core\containers">
       <UniqueIdentifier>{ffdf3f30-139c-43f8-98b5-8afb9a35de32}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\core\object">
-      <UniqueIdentifier>{aa31b244-211c-4444-89ea-0d2815003ee6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\engine">
       <UniqueIdentifier>{8fc77d92-ea3c-4d9d-bc65-634c5c7b95ec}</UniqueIdentifier>
     </Filter>
@@ -36,25 +33,19 @@
     <ClCompile Include="source\Main.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="source\UObject.cpp">
-      <Filter>include\core\object</Filter>
-    </ClCompile>
     <ClCompile Include="source\Actor.cpp">
+      <Filter>source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Object.cpp">
+      <Filter>source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameInstance.cpp">
       <Filter>source\engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AVector.h">
       <Filter>include\core\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="include\UObject.h">
-      <Filter>include\core\object</Filter>
-    </ClInclude>
-    <ClInclude Include="include\UWorld.h">
-      <Filter>include\engine</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ULevel.h">
-      <Filter>include\engine</Filter>
     </ClInclude>
     <ClInclude Include="include\Actor.h">
       <Filter>include\engine</Filter>
@@ -64,6 +55,21 @@
     </ClInclude>
     <ClInclude Include="include\SceneComponent.h">
       <Filter>include\engine\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engine.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Level.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\World.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameInstance.h">
+      <Filter>include\engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
