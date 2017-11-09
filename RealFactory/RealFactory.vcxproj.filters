@@ -25,6 +25,12 @@
     <Filter Include="include\engine">
       <UniqueIdentifier>{8fc77d92-ea3c-4d9d-bc65-634c5c7b95ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\engine">
+      <UniqueIdentifier>{f2ef87e1-f31b-4504-907d-a3d8b65efe74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\engine\components">
+      <UniqueIdentifier>{6d7f2db0-4bdd-4818-944b-c503677d1e91}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main.cpp">
@@ -32,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="source\UObject.cpp">
       <Filter>include\core\object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Actor.cpp">
+      <Filter>source\engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +52,18 @@
     </ClInclude>
     <ClInclude Include="include\UWorld.h">
       <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ULevel.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Actor.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ActorComponent.h">
+      <Filter>include\engine\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneComponent.h">
+      <Filter>include\engine\components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
