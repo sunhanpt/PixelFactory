@@ -28,6 +28,9 @@
     <Filter Include="include\engine\components">
       <UniqueIdentifier>{6d7f2db0-4bdd-4818-944b-c503677d1e91}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\core\genericPlatform">
+      <UniqueIdentifier>{12677f37-686c-4681-bea5-bad59ae1f55b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main.cpp">
@@ -70,6 +73,15 @@
     </ClInclude>
     <ClInclude Include="include\GameInstance.h">
       <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GenericPlatform.h">
+      <Filter>include\core\genericPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsPlatform.h">
+      <Filter>include\core\genericPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platform.h">
+      <Filter>include\core\genericPlatform</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

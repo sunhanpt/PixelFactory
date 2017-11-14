@@ -30,9 +30,12 @@
     <ClInclude Include="include\AVector.h" />
     <ClInclude Include="include\Engine.h" />
     <ClInclude Include="include\GameInstance.h" />
+    <ClInclude Include="include\GenericPlatform.h" />
+    <ClInclude Include="include\Platform.h" />
     <ClInclude Include="include\SceneComponent.h" />
     <ClInclude Include="include\Level.h" />
     <ClInclude Include="include\Object.h" />
+    <ClInclude Include="include\WindowsPlatform.h" />
     <ClInclude Include="include\World.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

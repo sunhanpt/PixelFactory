@@ -18,3 +18,7 @@ UGameViewportClient * UGameInstance::GetGameViewportClient() const
 void UGameInstance::StartGameInstance()
 {
 }
+
+void UGameInstance::Shutdown()
+{
+}
