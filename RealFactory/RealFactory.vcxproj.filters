@@ -46,9 +46,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\AVector.h">
-      <Filter>Core\Containers</Filter>
-    </ClInclude>
     <ClInclude Include="include\Actor.h">
       <Filter>Engine</Filter>
     </ClInclude>
@@ -87,6 +84,12 @@
     </ClInclude>
     <ClInclude Include="include\WindowsPlatformTime.h">
       <Filter>Core\GenericPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\String.h">
+      <Filter>Core\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Allocator.h">
+      <Filter>Core\Containers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

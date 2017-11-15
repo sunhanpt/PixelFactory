@@ -62,3 +62,33 @@ typedef FWindowsPlatformTypes FPlatformTypes;
 
 // disable this now as it is annoying for generic platform implementations
 #pragma warning(disable : 4100) // unreferenced formal parameter
+
+// memory debugging
+#if defined(_DEBUG)  && defined(_MSC_VER) && \
+	(_MSC_VER > 1299)  && !defined(_WIN32_WCE)
+
+#define CRTDBG_MAP_ALLOC
+#define _CRTDBG_MAP_ALLOC
+#define DEBUG_CLIENTBLOCK new( _CLIENT_BLOCK, __FILE__, __LINE__)
+#include <stdlib.h>
+#include <crtdbg.h>
+#define new DEBUG_CLIENTBLOCK
+#endif
+
+
+//! define a break macro for debugging.
+#if defined(_DEBUG)
+#if defined(_MSC_VER) && !defined (_WIN32_WCE)
+#if defined(WIN64) || defined(_WIN64) // using portable common solution for x64 configuration
+#include <crtdbg.h>
+#define _RF_DEBUG_BREAK_IF( _CONDITION_ ) if (_CONDITION_) {_CrtDbgBreak();}
+#else
+#define _RF_DEBUG_BREAK_IF( _CONDITION_ ) if (_CONDITION_) {_asm int 3}
+#endif
+#else
+#include "assert.h"
+#define _RF_DEBUG_BREAK_IF( _CONDITION_ ) assert( !(_CONDITION_) );
+#endif
+#else
+#define _RF_DEBUG_BREAK_IF( _CONDITION_ )
+#endif
