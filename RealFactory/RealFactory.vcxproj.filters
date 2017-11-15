@@ -5,40 +5,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Include">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Source">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Include\Core">
+    <Filter Include="Core">
       <UniqueIdentifier>{8793b701-49f6-4879-91ec-be36a8c9b740}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Include\Engine">
-      <UniqueIdentifier>{8fc77d92-ea3c-4d9d-bc65-634c5c7b95ec}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Include\Engine\components">
-      <UniqueIdentifier>{6d7f2db0-4bdd-4818-944b-c503677d1e91}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Core">
-      <UniqueIdentifier>{7d2fb332-30c4-4546-aafd-e6464850201b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Engine">
-      <UniqueIdentifier>{f2ef87e1-f31b-4504-907d-a3d8b65efe74}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Include\Core\Containers">
+    <Filter Include="Core\Containers">
       <UniqueIdentifier>{ffdf3f30-139c-43f8-98b5-8afb9a35de32}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Include\Core\GenericPlatform">
+    <Filter Include="Core\GenericPlatform">
       <UniqueIdentifier>{12677f37-686c-4681-bea5-bad59ae1f55b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Include\Core\Log">
+    <Filter Include="Core\Log">
       <UniqueIdentifier>{4f92f94b-2476-4ec1-b3e6-5a33a70c1ddd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Core\GenericPlatform">
-      <UniqueIdentifier>{332552f2-93af-440b-b654-85b3a8c8d7fb}</UniqueIdentifier>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{8fc77d92-ea3c-4d9d-bc65-634c5c7b95ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\components">
+      <UniqueIdentifier>{6d7f2db0-4bdd-4818-944b-c503677d1e91}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,60 +33,60 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="source\Actor.cpp">
-      <Filter>Source\Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="source\Object.cpp">
-      <Filter>Source\Engine</Filter>
+      <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="source\GameInstance.cpp">
-      <Filter>Source\Engine</Filter>
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Object.cpp">
+      <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="source\GenericPlatformTime.cpp">
-      <Filter>Source\Core\GenericPlatform</Filter>
+      <Filter>Core\GenericPlatform</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AVector.h">
-      <Filter>Include\Core\Containers</Filter>
+      <Filter>Core\Containers</Filter>
     </ClInclude>
     <ClInclude Include="include\Actor.h">
-      <Filter>Include\Engine</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="include\ActorComponent.h">
-      <Filter>Include\Engine\components</Filter>
+      <Filter>Engine\components</Filter>
     </ClInclude>
     <ClInclude Include="include\SceneComponent.h">
-      <Filter>Include\Engine\components</Filter>
+      <Filter>Engine\components</Filter>
     </ClInclude>
     <ClInclude Include="include\Engine.h">
-      <Filter>Include\Engine</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="include\Level.h">
-      <Filter>Include\Engine</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="include\Object.h">
-      <Filter>Include\Engine</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="include\World.h">
-      <Filter>Include\Engine</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="include\GameInstance.h">
-      <Filter>Include\Engine</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="include\GenericPlatform.h">
-      <Filter>Include\Core\GenericPlatform</Filter>
+      <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
     <ClInclude Include="include\WindowsPlatform.h">
-      <Filter>Include\Core\GenericPlatform</Filter>
+      <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
     <ClInclude Include="include\Platform.h">
-      <Filter>Include\Core\GenericPlatform</Filter>
+      <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
     <ClInclude Include="include\GenericPlatformTime.h">
-      <Filter>Include\Core\GenericPlatform</Filter>
+      <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
     <ClInclude Include="include\WindowsPlatformTime.h">
-      <Filter>Include\Core\GenericPlatform</Filter>
+      <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
