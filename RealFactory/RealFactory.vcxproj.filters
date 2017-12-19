@@ -41,8 +41,8 @@
     <ClCompile Include="source\Object.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="source\GenericPlatformTime.cpp">
-      <Filter>Core\GenericPlatform</Filter>
+    <ClCompile Include="source\utf8.cpp">
+      <Filter>Core\Containers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,22 +73,16 @@
     <ClInclude Include="include\GenericPlatform.h">
       <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
-    <ClInclude Include="include\WindowsPlatform.h">
-      <Filter>Core\GenericPlatform</Filter>
-    </ClInclude>
     <ClInclude Include="include\Platform.h">
       <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
-    <ClInclude Include="include\GenericPlatformTime.h">
-      <Filter>Core\GenericPlatform</Filter>
-    </ClInclude>
-    <ClInclude Include="include\WindowsPlatformTime.h">
-      <Filter>Core\GenericPlatform</Filter>
-    </ClInclude>
-    <ClInclude Include="include\String.h">
+    <ClInclude Include="include\Allocator.h">
       <Filter>Core\Containers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Allocator.h">
+    <ClInclude Include="include\WindowsPlatform.h">
+      <Filter>Core\GenericPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FString.h">
       <Filter>Core\Containers</Filter>
     </ClInclude>
   </ItemGroup>

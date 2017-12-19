@@ -1,11 +1,11 @@
 #include <iostream>
-#include <vector>
+#include "Platform.h"
 using namespace std;
 
 int main()
 {
-	std::vector<int> vectors;
-
 	cout << "Hello World!" << endl;
+	uint32 a = 100;
+	cout << a << endl;
 	return 0;
 }

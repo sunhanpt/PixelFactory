@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Platform.h"
-
+#include "String"
 /** Contains CPU utilization data. */
 struct FCPUTime
 {

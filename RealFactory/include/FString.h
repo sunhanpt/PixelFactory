@@ -2,27 +2,8 @@
 
 
 #include "Allocator.h"
-//#include "irrMath.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <cstring>
 
-
-
-//! Very simple string class with some useful features.
-/** string<c8> and string<wchar_t> both accept Unicode AND ASCII/Latin-1,
-so you can assign Unicode to string<c8> and ASCII/Latin-1 to string<wchar_t>
-(and the other way round) if you want to.
-
-However, note that the conversation between both is not done using any encoding.
-This means that c8 strings are treated as ASCII/Latin-1, not UTF-8, and
-are simply expanded to the equivalent wchar_t, while Unicode/wchar_t
-characters are truncated to 8-bit ASCII/Latin-1 characters, discarding all
-other information in the wchar_t.
-
-Helper functions for converting between UTF-8 and wchar_t are provided
-outside the string class for explicit use.
-*/
 
 // forward declarations
 template <typename T, typename TAlloc = FAllocator<T> >
@@ -68,16 +49,8 @@ static inline uint32 Locale_upper(uint32 x)
 	return x >= 'a' && x <= 'z' ? x + ('A' - 'a') : x;
 }
 
-//! Convert this utf-8-encoded string to the platform's wchar.
-/** The resulting string is always NULL-terminated and well-formed.
-\param len The size of the output buffer in bytes.
-*/
 void Utf8ToWchar(const char *in, wchar_t *out, const uint64 len);
 
-//! Convert this wchar string to utf-8.
-/** The resulting string is always NULL-terminated and well-formed.
-\param len The size of the output buffer in bytes.
-*/
 void WcharToUtf8(const wchar_t *in, char *out, const uint64 len);
 
 
@@ -283,7 +256,7 @@ public:
 
 	//! Constructor for copying a string from a pointer with a given length
 	template <class B>
-	FString(const B* const c, u32 length)
+	FString(const B* const c, uint32 length)
 		: array(0), allocated(0), used(0)
 	{
 		if (!c)
@@ -426,7 +399,7 @@ public:
 
 
 	//! Direct access operator
-	const T& operator [](const u32 index) const
+	const T& operator [](const uint32 index) const
 	{
 		_RF_DEBUG_BREAK_IF(index >= used) // bad index
 			return array[index];
@@ -694,7 +667,7 @@ public:
 	//! Appends a string of the length l to this string.
 	/** \param other: other String to append to this string.
 	\param length: How much characters of the other string to add to this one. */
-	string<T, TAlloc>& Append(const string<T, TAlloc>& other, uint32 length)
+	FString<T, TAlloc>& Append(const FString<T, TAlloc>& other, uint32 length)
 	{
 		if (other.Size() == 0)
 			return *this;
@@ -1390,23 +1363,12 @@ typedef FString<int8> FStringc;
 //! Typedef for wide character strings
 typedef FString<wchar_t> FStringw;
 
-//! Convert multibyte string to wide-character string
-/** Wrapper around mbstowcs from standard library, but directly using Irrlicht string class.
-What the function does exactly depends on the LC_CTYPE of the current c locale.
-\param destination Wide-character string receiving the converted source
-\param source multibyte string
-\return The number of wide characters written to destination, not including the eventual terminating null character or -1 when conversion failed */
+
 static inline size_t MultibyteToWString(FString<wchar_t>& destination, const FString<int8>& source)
 {
-	return MultibyteToWString(destination, source.C_Str(), (uint32)source.Size());
+	return MultibyteToWString(destination, (const char*)source.C_Str(), (uint32)source.Size());
 }
 
-//! Convert multibyte string to wide-character string
-/** Wrapper around mbstowcs from standard library, but directly writing to Irrlicht string class.
-What the function does exactly depends on the LC_CTYPE of the current c locale.
-\param destination Wide-character string receiving the converted source
-\param source multibyte string
-\return The number of wide characters written to destination, not including the eventual terminating null character  or -1 when conversion failed. */
 static inline size_t MultibyteToWString(FString<wchar_t>& destination, const char* source)
 {
 	uint32 s = source ? (uint32)strlen(source) : 0;
@@ -1434,8 +1396,6 @@ static size_t MultibyteToWString(FString<wchar_t>& destination, const char* sour
 		}
 		else
 		{
-			// Likely character which got converted until the invalid character was encountered are in destination now.
-			// And it seems even 0-terminated, but I found no documentation anywhere that this (the 0-termination) is guaranteed :-(
 			destination.Clear();
 		}
 		return written;
