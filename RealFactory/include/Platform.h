@@ -55,6 +55,9 @@ typedef FPlatformTypes::CHAR16		UTF16CHAR;
 /// A 32-bit character containing a UTF32 (Unicode, 32-bit, fixed-width) code unit.
 typedef FPlatformTypes::CHAR32		UTF32CHAR;
 
+typedef FPlatformTypes::FString		FString;
+typedef FPlatformTypes::FWString	FWString;
+
 /// An unsigned integer the same size as a pointer
 typedef FPlatformTypes::UPTRINT UPTRINT;
 /// A signed integer the same size as a pointer

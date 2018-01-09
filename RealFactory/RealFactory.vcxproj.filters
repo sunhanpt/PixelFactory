@@ -27,6 +27,12 @@
     <Filter Include="Engine\components">
       <UniqueIdentifier>{6d7f2db0-4bdd-4818-944b-c503677d1e91}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Math">
+      <UniqueIdentifier>{407ecce3-1489-4b55-b176-683441106977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Common">
+      <UniqueIdentifier>{88787866-3dc6-4c6d-8f99-eb41d837c05d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main.cpp">
@@ -41,8 +47,8 @@
     <ClCompile Include="source\Object.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="source\utf8.cpp">
-      <Filter>Core\Containers</Filter>
+    <ClCompile Include="source\FMath.cpp">
+      <Filter>Core\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,8 +88,20 @@
     <ClInclude Include="include\WindowsPlatform.h">
       <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
-    <ClInclude Include="include\FString.h">
-      <Filter>Core\Containers</Filter>
+    <ClInclude Include="include\FVector.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FMath.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FMathUtility.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CoreDefines.h">
+      <Filter>Core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FMatrix.h">
+      <Filter>Core\Math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

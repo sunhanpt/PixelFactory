@@ -3,6 +3,7 @@
 //---------------------------------------------------------------------
 // Utility for automatically setting up the pointer-sized integer type
 //---------------------------------------------------------------------
+#include <string>
 
 template<typename T32BITS, typename T64BITS, int PointerSize>
 struct SelectIntPointerType
@@ -46,6 +47,9 @@ struct FGenericPlatformTypes
 	typedef uint16				CHAR16;		// A 16-bit character type - In-memory only.  16-bit representation.  Should really be char16_t but making this the generic option is easier for compilers which don't fully support C++11 yet (i.e. MSVC).
 	typedef uint32				CHAR32;		// A 32-bit character type - In-memory only.  32-bit representation.  Should really be char32_t but making this the generic option is easier for compilers which don't fully support C++11 yet (i.e. MSVC).
 	typedef WIDECHAR			TCHAR;		// A switchable character  - In-memory only.  Either ANSICHAR or WIDECHAR, depending on a licensee's requirements.
+
+	typedef std::string				FString;
+	typedef std::wstring				FWString;
 
 	typedef SelectIntPointerType<uint32, uint64, sizeof(void*)>::TIntPointer UPTRINT;	// unsigned int the same size as a pointer
 	typedef SelectIntPointerType<int32, int64, sizeof(void*)>::TIntPointer PTRINT;		// signed int the same size as a pointer
