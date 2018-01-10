@@ -50,6 +50,9 @@
     <ClCompile Include="source\FMath.cpp">
       <Filter>Core\Math</Filter>
     </ClCompile>
+    <ClCompile Include="source\FMatrix.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Actor.h">
@@ -101,6 +104,9 @@
       <Filter>Core\Common</Filter>
     </ClInclude>
     <ClInclude Include="include\FMatrix.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FVector4.h">
       <Filter>Core\Math</Filter>
     </ClInclude>
   </ItemGroup>

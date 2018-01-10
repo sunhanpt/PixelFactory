@@ -24,6 +24,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="source\FMath.cpp" />
+    <ClCompile Include="source\FMatrix.cpp" />
     <ClCompile Include="source\GameInstance.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -56,6 +57,7 @@
     <ClInclude Include="include\FMathUtility.h" />
     <ClInclude Include="include\FMatrix.h" />
     <ClInclude Include="include\FVector.h" />
+    <ClInclude Include="include\FVector4.h" />
     <ClInclude Include="include\GameInstance.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
