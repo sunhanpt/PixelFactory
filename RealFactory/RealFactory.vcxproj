@@ -48,6 +48,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="include\Axis.h" />
     <ClInclude Include="include\CoreDefines.h" />
     <ClInclude Include="include\Engine.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -56,6 +57,7 @@
     <ClInclude Include="include\FMath.h" />
     <ClInclude Include="include\FMathUtility.h" />
     <ClInclude Include="include\FMatrix.h" />
+    <ClInclude Include="include\FPlane.h" />
     <ClInclude Include="include\FVector.h" />
     <ClInclude Include="include\FVector4.h" />
     <ClInclude Include="include\GameInstance.h">
@@ -90,6 +92,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\FMatrix.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

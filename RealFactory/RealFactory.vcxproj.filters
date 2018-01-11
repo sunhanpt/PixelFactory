@@ -91,9 +91,6 @@
     <ClInclude Include="include\WindowsPlatform.h">
       <Filter>Core\GenericPlatform</Filter>
     </ClInclude>
-    <ClInclude Include="include\FVector.h">
-      <Filter>Core\Math</Filter>
-    </ClInclude>
     <ClInclude Include="include\FMath.h">
       <Filter>Core\Math</Filter>
     </ClInclude>
@@ -109,5 +106,19 @@
     <ClInclude Include="include\FVector4.h">
       <Filter>Core\Math</Filter>
     </ClInclude>
+    <ClInclude Include="include\FVector.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Axis.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FPlane.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\FMatrix.inl">
+      <Filter>Core\Math</Filter>
+    </None>
   </ItemGroup>
 </Project>
