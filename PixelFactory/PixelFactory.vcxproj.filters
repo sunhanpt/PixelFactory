@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\FMath.cpp">
+      <Filter>Core\Math\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FMatrix.cpp">
+      <Filter>Core\Math\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Actor.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameInstance.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Object.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Axis.h">
+      <Filter>Core\Math\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FMath.h">
+      <Filter>Core\Math\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FPlane.h">
+      <Filter>Core\Math\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FMatrix.h">
+      <Filter>Core\Math\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FVector.h">
+      <Filter>Core\Math\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FVector4.h">
+      <Filter>Core\Math\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FMathUtility.h">
+      <Filter>Core\Math\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Actor.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ActorComponent.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engine.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameInstance.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Level.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneComponent.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\World.h">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platform.h">
+      <Filter>Core\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsPlatform.h">
+      <Filter>Core\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GenericPlatform.h">
+      <Filter>Core\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Allocator.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CoreDefines.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{dccac81a-6229-4bfc-a441-d4ad092085ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{a0b56ee7-b30d-43b2-bcd8-224e2505dbcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private">
+      <UniqueIdentifier>{136530b1-8729-481d-afeb-fa4820bfa2a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public">
+      <UniqueIdentifier>{f885007a-2687-41c1-936d-c24f5b50ee79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math">
+      <UniqueIdentifier>{bde828d0-9697-4854-99e6-60456dc4c8df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math\Private">
+      <UniqueIdentifier>{8d3f73cb-6f75-44a6-a4ce-470180d0bb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math\Public">
+      <UniqueIdentifier>{9276a58f-b37d-4c53-9552-df4eee221f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Platform">
+      <UniqueIdentifier>{850cc240-df34-4fe8-9c79-027854132c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Container">
+      <UniqueIdentifier>{137b267f-c77f-4dcf-8a64-7b36b668e565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Utility">
+      <UniqueIdentifier>{b60f48cd-1ef4-4fb6-9df6-056c73527b82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\FMatrix.inl">
+      <Filter>Core\Math\Public</Filter>
+    </None>
+  </ItemGroup>
+</Project>
